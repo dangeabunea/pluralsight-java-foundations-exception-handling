@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - NORTH
+==============================
+Report Time: 1430Z
+Visibility: 10+ miles
+Ceiling: Clear skies
+Temperature: 15°C
+Wind: 270/15KT
+Altimeter: 30.12
+Remarks: VFR conditions throughout sector. No significant weather.

@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - EAST (BACKUP/OLDER FORECAST)
+=====================================================
+Report Time: 1200Z
+Visibility: 3 miles in mist
+Ceiling: Overcast 1,500 feet
+Temperature: 16°C
+Wind: 080/08KT
+Altimeter: 30.08
+Remarks: MVFR conditions. Morning fog expected to worsen. This is an older forecast - use for reference only.

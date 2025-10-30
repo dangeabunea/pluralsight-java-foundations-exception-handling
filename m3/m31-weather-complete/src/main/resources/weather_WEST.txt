@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - WEST
+=============================
+Report Time: 1430Z
+Visibility: 2 miles in thunderstorms
+Ceiling: Overcast 1,200 feet
+Temperature: 25°C
+Wind: 220/18KT gusting 28KT
+Altimeter: 29.88
+Remarks: IFR conditions. Severe thunderstorms with heavy rain. Lightning detected. Moderate turbulence reported. Avoid area if possible.

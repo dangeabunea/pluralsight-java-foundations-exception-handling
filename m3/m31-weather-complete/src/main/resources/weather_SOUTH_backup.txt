@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - SOUTH (BACKUP/OLDER FORECAST)
+======================================================
+Report Time: 1200Z
+Visibility: 6 miles
+Ceiling: Broken clouds 3,000 feet
+Temperature: 20°C
+Wind: 160/10KT
+Altimeter: 29.98
+Remarks: MVFR conditions. Scattered showers in vicinity. Conditions expected to deteriorate. This is an older forecast - use for reference only.

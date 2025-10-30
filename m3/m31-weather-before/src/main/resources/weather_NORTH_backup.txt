@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - NORTH (BACKUP/OLDER FORECAST)
+======================================================
+Report Time: 1200Z
+Visibility: 8 miles
+Ceiling: Scattered clouds 4,000 feet
+Temperature: 13°C
+Wind: 250/12KT
+Altimeter: 30.15
+Remarks: VFR conditions. High pressure system moving through. This is an older forecast - use for reference only.

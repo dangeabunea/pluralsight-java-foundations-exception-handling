@@ -1,0 +1,9 @@
+SECTOR WEATHER REPORT - WEST (BACKUP/OLDER FORECAST)
+=====================================================
+Report Time: 1200Z
+Visibility: 5 miles
+Ceiling: Broken clouds 2,500 feet
+Temperature: 23°C
+Wind: 210/12KT
+Altimeter: 29.92
+Remarks: MVFR conditions. Convective activity building to the west. Thunderstorms expected to develop by 1400Z. This is an older forecast - use for reference only.
