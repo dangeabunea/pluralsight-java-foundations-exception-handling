@@ -1,26 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.pluralsight.atc</groupId>
-  <artifactId>m3-parent</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <parent>
+    <groupId>com.pluralsight.atc</groupId>
+    <artifactId>m3-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 
-  <name>m3-parent</name>
+  <artifactId>m32-runway-before</artifactId>
+  <packaging>jar</packaging>
+
+  <name>m32-runway-before</name>
 
   <properties>
     <maven.compiler.source>24</maven.compiler.source>
     <maven.compiler.target>24</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <modules>
-    <module>m31-weather-before</module>
-    <module>m31-weather-complete</module>
-    <module>m32-runway-before</module>
-    <module>m32-runway-complete</module>
-  </modules>
 
 </project>
