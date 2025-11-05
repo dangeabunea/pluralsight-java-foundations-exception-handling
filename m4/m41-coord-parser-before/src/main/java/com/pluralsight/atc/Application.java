@@ -7,35 +7,33 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = null;
         InputStream inputStream = null;
 
         try {
-            // Line 5,9 from radar-output.txt are invalid
             inputStream = Application.class
                     .getClassLoader()
                     .getResourceAsStream("radar-output.txt");
-            scanner = new Scanner(inputStream);
 
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                LatLon coord = new LatLon(line);
-                System.out.println("Read coordinate: " + coord.getLatitude() + "," + coord.getLongitude());
+            Scanner scanner = null;
+            try {
+                scanner = new Scanner(inputStream);
+
+                while (scanner.hasNextLine()) {
+                    String line = scanner.nextLine();
+                    LatLon coord = new LatLon(line);
+                    System.out.println("Read coordinate: " + coord.getLatitude() + "," + coord.getLongitude());
+                }
+            } finally {
+                if (scanner != null) {
+                    scanner.close();
+                }
             }
         } catch (Exception e) {
             System.err.println("Error reading coordinates: " + e.getMessage());
         } finally {
-            // Close in reverse order of creation
-            if (scanner != null) {
-                scanner.close();
-            }
-
             if (inputStream != null) {
-                // If scanner creation failed, inputStream still needs closing
                 inputStream.close();
             }
-
-            System.out.println("Resources freed");
         }
     }
 }
