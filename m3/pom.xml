@@ -21,6 +21,8 @@
     <module>m31-weather-complete</module>
     <module>m32-runway-before</module>
     <module>m32-runway-complete</module>
+    <module>m33-runway-issue-before</module>
+    <module>m33-runway-issue-complete</module>
   </modules>
 
 </project>

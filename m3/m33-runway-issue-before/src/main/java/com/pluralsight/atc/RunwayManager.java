@@ -4,6 +4,7 @@ public class RunwayManager {
     private final String runwayId;
     private boolean closed = false;
     private boolean occupied = false;
+    private boolean isLightingSystemOperational = true;
 
     public RunwayManager(String runwayId) {
         this.runwayId = runwayId;
@@ -13,7 +14,18 @@ public class RunwayManager {
         this.closed = closed;
     }
 
+    public void setLightingSystemOperational(boolean lightingSystemOperational) {
+        isLightingSystemOperational = lightingSystemOperational;
+    }
+
     public void requestTakeoff(String aircraftCallSign) {
+        try {
+            checkRunwaySystems();
+        } catch (RuntimeException e) {
+            this.closed = true;
+            throw new RunwayClosedException(this.runwayId);
+        }
+
         if (closed) {
             throw new RunwayClosedException(this.runwayId);
         }
@@ -25,6 +37,12 @@ public class RunwayManager {
         // Occupy runway with this aircraft
         occupied = true;
         System.out.println("Takeoff clearance granted to " + aircraftCallSign);
+    }
+
+    private void checkRunwaySystems() {
+        if(!isLightingSystemOperational){
+            throw new RuntimeException("Runway lighting system is not operational.");
+        }
     }
 
     public void releaseRunway() {

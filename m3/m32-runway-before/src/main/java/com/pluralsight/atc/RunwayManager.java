@@ -13,7 +13,7 @@ public class RunwayManager {
         this.closed = closed;
     }
 
-    public synchronized void requestTakeoff(String aircraftCallSign) {
+    public void requestTakeoff(String aircraftCallSign) {
 
         if (closed) {
             throw new UnsupportedOperationException("Runway closed. Use another runway.");
@@ -25,13 +25,11 @@ public class RunwayManager {
 
         // Occupy runway with this aircraft
         occupied = true;
-        System.out.println("Takeoff clearance granted to " + aircraftCallSign +
-                " on " + runwayId + ". Runway now occupied.");
+        System.out.println("Takeoff clearance granted to " + aircraftCallSign);
     }
 
-    public synchronized void releaseRunway(String aircraftCallSign) {
-        System.out.println("Aircraft " + aircraftCallSign + " has departed. "
-                + "Runway " + runwayId + " is now free.");
+    public synchronized void releaseRunway() {
+        System.out.println("Runway is now free");
         occupied = false;
     }
 }
