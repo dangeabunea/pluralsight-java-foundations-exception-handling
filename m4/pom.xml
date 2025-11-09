@@ -19,6 +19,8 @@
     <modules>
         <module>m41-coord-parser-before</module>
         <module>m41-coord-parser-complete</module>
+        <module>m42-coord-parser-supressed-before</module>
+        <module>m42-coord-parser-supressed-complete</module>
     </modules>
 
 </project>
