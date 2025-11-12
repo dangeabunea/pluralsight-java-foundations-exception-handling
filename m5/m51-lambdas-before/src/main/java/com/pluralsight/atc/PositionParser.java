@@ -8,10 +8,6 @@ public class PositionParser {
      * Parses a line of position data into an AircraftPosition object.
      * Expected format: "CALLSIGN ALTITUDE LATITUDE LONGITUDE"
      * Example: "UAL123 35000 40.7128 -74.0060"
-     *
-     * @param line the raw position data line
-     * @return parsed AircraftPosition
-     * @throws ParseException if the line format is invalid or data cannot be parsed
      */
     public static AircraftPosition parse(String line) throws ParseException {
         String[] parts = line.split("\\s+");

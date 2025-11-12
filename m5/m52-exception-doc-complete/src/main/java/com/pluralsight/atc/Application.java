@@ -1,10 +1,10 @@
 package com.pluralsight.atc;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
-
-
 public class Application {
+    public static void main(String[] args) {
+        RunwayManager runwayManager = new RunwayManager("LF1");
+        runwayManager.setClosed(true);
 
+        runwayManager.requestTakeoff("AF123");
+    }
 }
