@@ -9,7 +9,7 @@ public class AssignedAltitude {
      * @param value
      */
     public AssignedAltitude(String value) {
-        if (value == null) {
+        if (value == null || value.isEmpty()) {
             throw new NullPointerException("Altitude cannot be null");
         }
 
