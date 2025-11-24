@@ -23,7 +23,9 @@ public class AtcWeatherService {
             }
             return report.toString();
         } finally {
-            reader.close();
+            if(reader != null) {
+                reader.close();
+            }
         }
     }
 
