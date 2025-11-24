@@ -5,9 +5,7 @@ public class AssignedAltitude {
 
     /**
      * Correct values
-     * - 100
-     * - 100ft
-     *
+     * - 0, 100, 200, 43000
      * @param value
      */
     public AssignedAltitude(String value) {
