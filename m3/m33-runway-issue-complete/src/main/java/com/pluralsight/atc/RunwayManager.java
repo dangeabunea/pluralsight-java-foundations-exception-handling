@@ -41,7 +41,7 @@ public class RunwayManager {
 
     private void checkRunwaySystems() {
         if(!isLightingSystemOperational){
-            throw new RunwayLightingNotOperationalException();
+            throw new RuntimeException("Runway lighting system is not operational.");
         }
     }
 
