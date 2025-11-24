@@ -15,7 +15,7 @@ public class RunwayManager {
 
     public void requestTakeoff(String aircraftCallSign) {
         if (closed) {
-            throw new RunwayClosedException(this.runwayId);
+            throw new UnsupportedOperationException("Runway closed. Use another runway.");
         }
 
         if (occupied) {
