@@ -1,6 +1,9 @@
 package com.pluralsight.atc;
 
-public record AircraftPosition(String callsign, int altitude, double latitude, double longitude) {
+public record AircraftPosition(String callsign,
+                               int altitude,
+                               double latitude,
+                               double longitude) {
     @Override
     public String toString() {
         return String.format("%s at FL%03d (%.4f°, %.4f°)",
