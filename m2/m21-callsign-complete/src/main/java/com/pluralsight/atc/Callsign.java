@@ -9,7 +9,7 @@ public class Callsign {
             throw new NullPointerException("Callsign cannot be null");
         }
 
-        // Validation Rule: Callsign must be between 2 and 10 characters
+        // Validation Rule: Callsign must be between 4 and 10 characters
         if (value.length() < 4 || value.length() > 10) {
             throw new IllegalArgumentException("Callsign must be between 4 and 10 characters");
         }
